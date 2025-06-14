@@ -20,7 +20,7 @@ public class Loginpage extends TestBase {
 	@FindBy(xpath="//*[@id=\"submit\"]")
 	WebElement loginBtn;
 	
-	@FindBy(xpath = "//*[@id=\"login\"]/h2")
+	@FindBy(xpath = "//h2[contains(text(), 'Test login')]")  
 	WebElement Title;
 	
 	
@@ -43,6 +43,13 @@ public class Loginpage extends TestBase {
 		return Title.isDisplayed();
 		
 	}
+	
+public String getTitle() {
+		
+		return Title.getText();
+		
+	}
+	
 	
 	public HomePage login(String un,String pwd) {
 		

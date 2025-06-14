@@ -33,10 +33,18 @@ public class LoginPagetest extends TestBase {
 	@Test(priority=1)
 	public void VerifyTitle() {
 		boolean title = loginpage.TitleDisplayed();
-		Assert.assertEquals(title, "Test Login");
+		System.out.println("The status of title displayd is : "+title);
+		
 	}
 	
 	@Test(priority=2)
+	public void getTitle() {
+		String title1 = loginpage.getTitle();
+		System.out.println("The status of title displayd is : "+title1);
+		Assert.assertEquals(title1, "Test login");
+	}
+	
+	@Test(priority=3)
 	public void Logintest() {
 		loginpage.login(prop.getProperty("username"),prop.getProperty("password"));
 		
