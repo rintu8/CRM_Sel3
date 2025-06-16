@@ -1,5 +1,8 @@
 package com.CRM.qa.base;
 import org.openqa.selenium.chrome.ChromeDriver;
+import com.aventstack.extentreports.*;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
