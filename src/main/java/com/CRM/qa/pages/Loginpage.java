@@ -23,6 +23,13 @@ public class Loginpage extends TestBase {
 	@FindBy(xpath = "//h2[contains(text(), 'Test login')]")  
 	WebElement Title;
 	
+
+	@FindBy(xpath = "//nav[@class='menu']//li[@id='menu-item-43']s")  
+	WebElement HomeTitle;
+	
+	@FindBy(xpath = "//h1[text()='Hello']")  
+	WebElement HomePagetext;
+	
 	
 	
 	//Now initialize these repositories
@@ -44,6 +51,26 @@ public class Loginpage extends TestBase {
 		
 	}
 	
+public boolean HomeTitleDisplayed() {
+		
+		return HomeTitle.isDisplayed();
+		
+	}
+
+public void ClickHomeTitle() {
+	
+	HomeTitle.isDisplayed();
+	HomeTitle.click();
+}
+	
+
+public void VerifyTextOnHomePage() {
+	
+	HomePagetext.isDisplayed();
+	
+}
+
+
 public String getTitle() {
 		
 		return Title.getText();

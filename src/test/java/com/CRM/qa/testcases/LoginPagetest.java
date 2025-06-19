@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
 import com.CRM.qa.base.TestBase;
+import com.CRM.qa.pages.HomePage;
 import com.CRM.qa.pages.Loginpage;
 
 
@@ -49,6 +50,8 @@ public class LoginPagetest extends TestBase {
 		loginpage.login(prop.getProperty("username"),prop.getProperty("password"));
 		
 	}
+	
+	
 	
 	
 	@AfterMethod
