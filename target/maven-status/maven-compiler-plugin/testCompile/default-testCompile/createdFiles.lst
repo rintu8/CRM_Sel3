@@ -1,1 +1,3 @@
+com\CRM\qa\testcases\HomePageTest.class
 com\CRM\qa\testcases\LoginPagetest.class
+ParalletTestTestNG\TestNGParallelTesting.class

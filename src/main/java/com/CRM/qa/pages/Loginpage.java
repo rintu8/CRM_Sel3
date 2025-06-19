@@ -51,25 +51,6 @@ public class Loginpage extends TestBase {
 		
 	}
 	
-public boolean HomeTitleDisplayed() {
-		
-		return HomeTitle.isDisplayed();
-		
-	}
-
-public void ClickHomeTitle() {
-	
-	HomeTitle.isDisplayed();
-	HomeTitle.click();
-}
-	
-
-public void VerifyTextOnHomePage() {
-	
-	HomePagetext.isDisplayed();
-	
-}
-
 
 public String getTitle() {
 		

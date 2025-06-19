@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-19T15:56:52 IST" name="Surefire suite" finished-at="2025-06-19T15:57:08 IST" duration-ms="16413">
+    <groups>
+    </groups>
+    <test started-at="2025-06-19T15:56:52 IST" name="Surefire test" finished-at="2025-06-19T15:57:08 IST" duration-ms="16413">
+      <class name="com.CRM.qa.testcases.HomePageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.CRM.qa.testcases.HomePageTest@f2f2cc1]" started-at="2025-06-19T15:56:52 IST" name="setup" finished-at="2025-06-19T15:56:59 IST" duration-ms="7415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifyHomeTitle()[pri:4, instance:com.CRM.qa.testcases.HomePageTest@f2f2cc1]" started-at="2025-06-19T15:56:59 IST" name="VerifyHomeTitle" finished-at="2025-06-19T15:56:59 IST" duration-ms="20" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "this.HomeTitle" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "this.HomeTitle" is null
+at com.CRM.qa.pages.HomePage.HomeTitleDisplayed(HomePage.java:21)
+at com.CRM.qa.testcases.HomePageTest.VerifyHomeTitle(HomePageTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyHomeTitle -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.CRM.qa.testcases.HomePageTest@f2f2cc1]" started-at="2025-06-19T15:56:59 IST" name="setup" finished-at="2025-06-19T15:57:04 IST" duration-ms="4781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ClickHomeTitle()[pri:5, instance:com.CRM.qa.testcases.HomePageTest@f2f2cc1]" started-at="2025-06-19T15:57:04 IST" name="ClickHomeTitle" finished-at="2025-06-19T15:57:04 IST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "this.HomeTitle" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "this.HomeTitle" is null
+at com.CRM.qa.pages.HomePage.ClickHomeTitle(HomePage.java:27)
+at com.CRM.qa.testcases.HomePageTest.ClickHomeTitle(HomePageTest.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickHomeTitle -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.CRM.qa.testcases.HomePageTest@f2f2cc1]" started-at="2025-06-19T15:57:04 IST" name="setup" finished-at="2025-06-19T15:57:08 IST" duration-ms="4077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifytsHomePage()[pri:6, instance:com.CRM.qa.testcases.HomePageTest@f2f2cc1]" started-at="2025-06-19T15:57:08 IST" name="VerifytsHomePage" finished-at="2025-06-19T15:57:08 IST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "this.HomePagetext" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "this.HomePagetext" is null
+at com.CRM.qa.pages.HomePage.VerifyTextOnHomePage(HomePage.java:34)
+at com.CRM.qa.testcases.HomePageTest.VerifytsHomePage(HomePageTest.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifytsHomePage -->
+      </class> <!-- com.CRM.qa.testcases.HomePageTest -->
+      <class name="ParalletTestTestNG.TestNGParallelTesting">
+        <test-method signature="Test1()[pri:0, instance:ParalletTestTestNG.TestNGParallelTesting@13c10b87]" started-at="2025-06-19T15:57:08 IST" name="Test1" finished-at="2025-06-19T15:57:08 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method signature="Test2()[pri:0, instance:ParalletTestTestNG.TestNGParallelTesting@13c10b87]" started-at="2025-06-19T15:57:08 IST" name="Test2" finished-at="2025-06-19T15:57:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+      </class> <!-- ParalletTestTestNG.TestNGParallelTesting -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

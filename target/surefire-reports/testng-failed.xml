@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
       <class name="com.CRM.qa.testcases.HomePageTest">
         <methods>
           <include name="VerifyHomeTitle"/>
-          <include name="teardown"/>
+          <include name="ClickHomeTitle"/>
           <include name="VerifytsHomePage"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.CRM.qa.testcases.HomePageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
