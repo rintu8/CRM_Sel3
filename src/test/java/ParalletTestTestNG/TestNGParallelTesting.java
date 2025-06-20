@@ -2,6 +2,8 @@ package ParalletTestTestNG;
 
 import org.testng.annotations.Test;
 
+import io.qameta.allure.Description;
+
 //How to Run testcases in Parallel.Take the example of below.
 //==============================================================
 
@@ -22,7 +24,8 @@ import org.testng.annotations.Test;
 
 public class TestNGParallelTesting {
 	
-	@Test
+	@Test(priority=1,description="TestA")
+	@Description("Verify testA")
 	public void Test1(){
 		
 		System.out.println("I am inside Test1 : " +Thread.currentThread().threadId());
